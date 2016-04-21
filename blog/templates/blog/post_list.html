@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+
+        {% for post in posts %}
+            <div>
+            <h1><a href="">{{post.title}}</a></h1>
+            <strong>Posted by {{post.author}} - {{post.published_date}}</strong>
+            <p>{{post.text|linebreaks}}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
